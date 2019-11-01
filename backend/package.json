@@ -1,0 +1,21 @@
+{
+  "name": "jam3yee",
+  "version": "1.0.0",
+  "description": "App to create jam3yee and orginaize it ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "Zacky Kharboutli",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.1",
+    "hbs": "^4.0.6",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4",
+    "path": "^0.12.7"
+  }
+}

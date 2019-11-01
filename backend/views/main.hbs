@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>Application</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+    <body>
+      
+<nav class="ui orange piled  segment " >
+  <div class="container">
+     <h1>application name</h1>
+      <ul >
+        <li class="title" ><a href="/show">Jam3yaat</a></li>  
+            {{#if session.loggedin}}
+        <li class="title" ><a href="/create">Create</a></li>  
+        <li  class="title"><a href="/logout">Log out</a></li>  
+            {{else}}
+         <li class="title"><a href="/create">Create</a></li>
+          <li class="title"><a href="/">log in</a></li>
+            {{/if}}
+    
+      </ul>
+  </div>
+</nav>
+
+    <div >
+        {{#if flash }}
+    <div class=" ui {{flash.category}} message">
+        {{flash.message}}
+    </div>
+{{/if}}
+
+
+
+        {{{body}}}
+    </div>
+    </body>
+</html>

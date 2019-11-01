@@ -1,0 +1,17 @@
+   
+<nav class="ui orange piled  segment " >
+  <div class="container">
+     <h1>Sticky Snippets</h1>
+      <ul >
+        <li class="title" ><a href="/show">Snippets</a></li>  
+            {{#if session.loggedin}}
+        <li class="title" ><a href="/create">Create</a></li>  
+        <li  class="title"><a href="/logout">Log out</a></li>  
+            {{else}}
+         <li class="title"><a href="/create">Create</a></li>
+          <li class="title"><a href="/">log in</a></li>
+            {{/if}}
+    
+      </ul>
+  </div>
+</nav>

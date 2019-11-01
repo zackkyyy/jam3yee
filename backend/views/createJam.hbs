@@ -1,0 +1,56 @@
+
+ <div class="ui orange  header">
+                Create
+</div>
+
+
+
+<form class="ui middle aligned center aligned grid" action="/createJam3yee" method="POST">
+ <input type="text" name="amount" placeholder="amount">
+ <input type="text" name="numberOfParticipants" placeholder="number">
+
+</form>
+
+<form class="ui middle aligned center aligned grid" >
+    <div class="column">
+        <h2 class="ui header">
+            <div class="ui orange  header">
+                Sign Up
+            </div>
+        </h2>
+        <div class="ui stacked piled  segment">
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    <input type="text" name="username" placeholder="User name">
+                </div>
+            </div>
+            <div>
+                <h1> </h1>
+            </div>
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    <input type="text" name="email" placeholder="Email address">
+                </div>
+            </div>
+            <div>
+                <h1> </h1>
+            </div>
+            <div class="field">
+                <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+            <div>
+                <h1> </h1>
+            </div>
+            <button class="ui orange submit button">Register</button>
+        </div>
+        <div>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        </div>
+    </div>
+</form>
